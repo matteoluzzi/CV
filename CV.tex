@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{latexsym}
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Matteo Remo \textsc{Luzzi}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Terracina, Italy  | 23 September 1988 \\
+\textsc{Address:} & Vicolo Gregorio Antonelli 32, 04019, Terracina, Italy \\
+\textsc{Phone:} & +39 3273429778\\
+\textsc{email:} & {matteo.luzzi@gmail.com}\\
+\textsc{Driving Licence}: & B\\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+\
+\textsc{Italian:} & Mothertongue\\
+
+\textsc{English:} & Fluent\\
+
+\textsc{French:} & Basic Understanding\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r|p{11cm}}	
+\emph{Current} & M.Sc. in Computer Engineering at \textbf{University of "Tor Vergata"}, Rome
+\\ \textsc{October} 2012 & current Gpa: 28,02/30 \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{June} 2013 & Exchange period at \textbf{University of Bergen}, Norway
+\\ \textsc{August} 2012 &\textsc{Gpa}: B/A (equals to 28/30)
+\\ 
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{October} 2012 & B.Sc. in Computer Engineering at \textbf{University "Tor Vergata"}, Rome\\
+& \textsc{Gpa}: 24,5/30 - Final Grade 100/110\\
+& \textsc{Final Thesis}: "Anonymous sharing techiques using Bloomfilters" - Advisor: Prof. Pierpaolo Loreti\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{July} 2007& High School Diploma at \textbf{Liceo Scientifico ``L. Da Vinci''}, Terracina - Final Grade: 82/100
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+\section{M.Sc. current exams list}
+
+\begin{tabular}{lc}
+Software Security$^*$  & A/A \\
+Searching and Machine Learning$^*$ & A/A \\
+Complexity Theory$^*$ & C/A \\
+Cryptology$^*$ & C/A \\
+Inferential Statistic and Markov Processes & 30/30 \\
+Operational Research & 25/30 \\
+Advanced Mathemathics & 24/30 \\
+Networks and System performances Models & 29/30 \\
+Web Algorithms & 30/30 cum Laude \\
+\\
+\textit{Currently attending}:\\
+Distributed systems and cloud computing\\
+Games theory\\
+Network, Services, Systems and Software Engineering\\
+\end{tabular}
+
+\bigskip
+Exams marked with $^*$ refer to the exchange period
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+\emph{Current} & Student Job at  \textbf{University "Tor Vergata"}, Rome
+\\ \textsc{October} 2014 & Part-time Employee at Department Library \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{October} 2011 & Web Developer Back-End at  \textbf{e-buisness s.r.l.}, Rome
+\\ \textsc{December} 2011 & Freelance Contract  for the realization of a module for the 
+\\ &  italian Environment Ministry website \\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships}
+
+\begin{tabular}{rl}
+2012 - 2013 & LLP Erasmus scolarship for european student mobility \\
+
+2014 & scholarship for academic merits from \textbf{University "Tor Vergata"}, Rome\\
+\end{tabular}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Techincal Skills}
+
+\begin{tabular}{rl}
+Software Engineering: & \textsc{OOA and OOD using UML, Rational Unified Process} \\
+& Basis of: Agile \\
+Programming: & \textsc{Java(J2EE, Spring Framework, Apache Storm, Twitter4J)}
+\\ & \textsc{Python (Torndado webserver, Boto, NTLK)}
+\\ &\textsc{C}
+\\ & Basis of: Matlab, C++, Javascript (Google Maps API), HTML5,
+\\ & CSS3, Assembly \\
+Platforms: & Amazon Web Services\\
+Databases: & mySQL, DynamoDB\\
+OS: & Microsoft Windows, Linux  (Ubuntu, Lubuntu)\\
+Tools: & Git, Svn, Mercurial, Eclipse, Sublime-Text, HP Fortify,
+\\ & OWASP Zap, Rational RequisitePro, MS Office Suite, Latex \\
+Interests: & Big Data Analysis, Machine Learning, Algorithms
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+
+Technology, Innovations \\
+Hobbies: Traveling, Music, Sport, Documentaties, Cooking, Hiking
+
+%----------------------------------------------------------------------------------------
+
+
+
+\end{document}
