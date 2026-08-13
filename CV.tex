@@ -26,6 +26,7 @@
 \documentclass[a4paper,10pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
+\usepackage{longtable}
 \defaultfontfeatures{Mapping=tex-text}
  % Main document font
 
@@ -60,26 +61,113 @@
 
 \begin{tabular}{rl}
 \textsc{Place and Date of Birth:} & Terracina, Italy  | 23 September 1988 \\
-\textsc{Address:} & Vicolo Gregorio Antonelli 32, 04019, Terracina, Italy \\
-\textsc{Phone:} & +39 3273429778, +47 48259468\\
+\textsc{Address:} & Ole' Irgens Vei 47, 5019, Bergen, Norway \\
+\textsc{Phone:} & +47 48259468\\
 \textsc{email:} & {matteo.luzzi@gmail.com}\\
-\textsc{skype contact} & {matteo.remo.luzzi}\\
 \textsc{linkedin account} & {www.linkedin.com/in/matteoremoluzzi} \\
-\textsc{Driving Licence}: & B\\
 \end{tabular}
 
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+\section{Summary}
+
+\textsc Software engineer with strong technical knowledge in distributed systems
+focusing into designing, developing and maintaining system architectures
+able to serve millions of concurrent requests. Experienced also in big data
+processing, DevOps and SRE methodologies with focus on automation,
+load testing, disaster recovery, system resiliency and availability. \\
+
 
 %----------------------------------------------------------------------------------------
-%	LANGUAGES
+%	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{Work Experience}
+
+\begin{longtable}{r|p{11cm}}
+
+
+
+\textsc{Present} & Lead Engineer / Cloud Architect at \textbf{Vimond Media Solution AS},
+\\ \textsc{November} 2018 & Bergen, Norway \\
+& \textsc Leading the development of user-facing APIs and data platforms for large-scale OTT services, while driving cloud architecture and platform modernization initiatives.
+
+I contributed to the company by:
+\begin{itemize}
+\item designing and evolving distributed backend systems ensuring scalability, high availability, and consistent QoS under heavy load
+\item defining and driving AWS cloud architecture with focus on cost-efficiency, performance, and security
+\item mentoring engineers and driving best practices in system design, testing, observability, and operational excellence
+\end{itemize}
+
+\textsc{Key Achievements:}
+\begin{itemize}
+\item reduced cold start latency of Spring Boot microservices through warm-up strategies and GraalVM adoption
+\item re-architected image delivery pipeline to a serverless solution (AWS Lambda, S3, CloudFront), improving scalability and reducing costs
+\item built a large-scale analytics platform (S3 data lake, AWS Glue/Spark, QuickSight) for user behavior insights
+\item designed a search abstraction layer on Elasticsearch with custom DSL and optimized index design for diverse search use cases
+\end{itemize} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{November} 2018 & Software engineer at \textbf{Vimond Media Solution AS}, Bergen, Norway
+\\ \textsc{November} 2015 & \textsc As a software engineer at Vimond I contributed in the following initiatives: \\ &
+\begin{itemize}
+\item participated in the developing of an internal load test framework based on Jmeter, Consul and AWS services simulating the traffic of 2M+ concurrent users
+\item joined the core team that designed and developed a new cloud native content delivery module of the Vimond platform. The new system put the foundations for Vimond migration towards a cloud native, highly available and cost efficient platform. The project resulted in the launch of the sport streaming service Kayo Sports (https://kayosports.com.au), one of the most successful Vimond customers in the APAC region.
+\end{itemize} \\
+\multicolumn{2}{c}{} \\
+
+%\textsc{September} 2015 & Master thesis internship at \textbf{Vimond Media Solution %AS}, Bergen
+%\\ \textsc{June} 2015 & Worked on the design and implementation of a web analytics framework.  \\
+%\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+%\textsc{October} 2011 & Web Developer Back-End Java at  \textbf{e-buisness s.r.l.}, Rome, Italy
+%\\ \textsc{December} 2011 & Freelance contract  for the realization of a module for the Italian environment ministry website \\
+%\multicolumn{2}{c}{} \\
+
+\end{longtable}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
 
 \begin{tabular}{rl}
 
-\textsc{Italian:} & Mothertongue\\
+\textsc{Core:} & Distributed systems, system design, SRE, scalability \\
+& resiliency, load testing \\
 
-\textsc{English:} & Fluent\\
+\textsc{Languages:} & Java, TypeScript/Node.js, Go (basic), Python (basic) \\
+
+\textsc{Cloud \& Infrastructure:} & AWS, Terraform, Kubernetes, Karpenter, Docker \\
+
+\textsc{Data \& Streaming:} & Kafka, Elasticsearch, Redis, Spark, NATS, Debezium \\
+
+\textsc{Databases:} & PostgreSQL, Oracle, DynamoDB, Cassandra \\
+
+\textsc{Observability:} & Datadog, New Relic, Prometheus, Grafana \\
+
+\textsc{Load testing:} & K6, Jmeter \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SPEAKING ENGAGEMENTS
+%----------------------------------------------------------------------------------------
+\section{Speaking Engagements}
+
+\begin{tabular}{r|p{11cm}}
+
+\textsc{2024--2025} & ``Autoscaling Kubernetes Workloads with Karpenter" (with AWS) \\
+& Cloud Native Bergen (Oct 2024), Cloud Native Oslo (Mar 2025), AWSome Day Oslo (Sep 2025) \\
+\multicolumn{2}{c}{} \\
+
+\textsc{2019} & ``Load Testing for Millions of Users" \\
+& javaBin Bergen (Jan 2019), javaBin Trondheim (Nov 2019) \\
 
 \end{tabular}
 
@@ -92,138 +180,56 @@
 \begin{tabular}{r|p{11cm}}	
 
 \textsc{October} 2015 & M.Sc. in Computer Engineering at \textbf{University ``Tor Vergata"}, Rome\\
-& \textsc{Gpa}: 28/30 - Final Grade 109/110\\
-& \textsc{Final Thesis}: ``A web analytics framework based on the Lambda architecture" - Advisor: Prof. Valeria Cardellini (University of Rome ``Tor Vergata"), Glenn Skare Pedersen and Thomas Aalen (Vimond Media Solutions)\\
+& \textsc{Final Thesis}: ``A web analytics framework based on the Lambda architecture" - \textsc{Final grade} 109/110\\
 \multicolumn{2}{c}{} \\
 
 
 %------------------------------------------------
 
-\textsc{June} 2013 & Exchange period at \textbf{University of Bergen}, Norway
-\\ \textsc{August} 2012 &\textsc{Gpa}: B/A (equals to 28/30)
-\\ 
-\multicolumn{2}{c}{} \\
+%\textsc{June} 2013 & Exchange period at \textbf{University of Bergen}, Norway
+%\\ \textsc{August} 2012
+%\\ 
+%\multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
 \textsc{October} 2012 & B.Sc. in Computer Engineering at \textbf{University ``Tor Vergata"}, Rome\\
-& \textsc{Gpa}: 24,5/30 - Final Grade 100/110\\
-& \textsc{Final Thesis}: ``Evaluation of anonymous sharing techiques using Bloomfilters" - Advisor: Prof. Pierpaolo Loreti\\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{July} 2007& High School Diploma at \textbf{Liceo Scientifico ``L. Da Vinci''}, Terracina - Final Grade: 82/100 \\
-\multicolumn{2}{c}{} \\
-%\end{tabular}
-
-
-\textsc{M.Sc. exams list} &
-
-Software security\\
-& Searching and machine learning\\
-& Complexity theory\\
-& Cryptology\\
-& Inferential statistic and Markov processes \\
-& Operational research \\
-& Complements of mathemathics \\
-& Networks and system performances models \\
-& Web algorithms \\
-& Distributed systems and cloud computing\\
-& Games theory\\
-& Networks, services, systems and software engineering\\
 
 \end{tabular}
 %----------------------------------------------------------------------------------------
 
-
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-%----------------------------------------------------------------------------------------
-
-\section{Work Experience}
-
-\begin{tabular}{r|p{11cm}}
-
-\emph{Current} & Software engineer at \textbf{Vimond Media Solution AS}, Bergen
-\\ \textsc{November} 2015   \\
-\multicolumn{2}{c}{} \\
-
-\textsc{September} 2015 & Master thesis internship at \textbf{Vimond Media Solution AS}, Bergen
-\\ \textsc{June} 2015   \\
-\multicolumn{2}{c}{} \\
-
-\textsc{May} 2015 & Student Job at  \textbf{University ``Tor Vergata"}, Rome
-\\ \textsc{October} 2014 & Part-time employee at university department library \\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\textsc{October} 2011 & Web Developer Back-End Java at  \textbf{e-buisness s.r.l.}, Rome
-\\ \textsc{December} 2011 & Freelance Contract  for the realization of a module for the 
-\\ &  italian environment ministry website \\
-\multicolumn{2}{c}{} \\
-
-\end{tabular}
-
-
-%----------------------------------------------------------------------------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
+%	LANGUAGES
 %----------------------------------------------------------------------------------------
 
-\section{Scholarships}
+\section{Languages}
 
 \begin{tabular}{rl}
-2012 - 2013 & LLP Erasmus scolarship for european student mobility \\
 
-2014 & Scholarship for academic merits from \textbf{University ``Tor Vergata"}, Rome\\
+\textsc{Italian:} & Mother tongue\\
+
+\textsc{English:} & Fluent\\
+
+\textsc{Norwegian:} & Fluent\\
+
+\textsc{Spanish:} & Basic understanding\\
+
 \end{tabular}
-
-
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL SKILLS 
-%----------------------------------------------------------------------------------------
-
-\section{Techincal Skills}
-
-\begin{tabular}{rl}
-\textsc{Software Engineering}: & OOA and OOD using UML, Rational Unified Process \\
-\textsc{Programming}: & Java (Spring MVC, JSP, JSTL, JPA, Appfuse, Dropwizard) \\ & Basics of Hibernate
-\\ & Python (Tornado, Boto, NLTK)
-\\ & C
-\\ & Basics of: Javascript (jQuery, WebSocket), Matlab, 
-\\ & CSS3, HTML,  Assembly  \\
-\textsc{IaaS}: & Amazon Web Services\\
-\textsc{Big Data Computing}: & Apache Storm, Apache Spark, Apache Kafka, Elasticsearch \\
-& Basics of Hadoop (Yarn, HDFS) \\
-\textsc{DBMS}: & mySQL, DynamoDB, Cassandra\\
-\textsc{OS}: & Microsoft Windows, Linux\\
-\textsc{Tools}: & Git, Eclipse, HP Fortify, OWASP Zap, Rational RequisitePro, \\ & Rational Software Architect, MS Office Suite, Latex \\
-\textsc{Interests}: & Big data, Distributed and cloud computing, Algorithms \\ & Machine learning, Theoretical computer science
-\end{tabular}
-
-\section{Main academic projects}
-\begin{itemize}
-\item Master Thesis project: design and development and deployment of a distributed application for web analytics computing. Based on the Lambda architecture approach, the system is able to perform real-time and historycal analytics computing. 
-\item Distributed P2P system written in C using Berkley socket API.
-\item Security analysis of OpenXData project using static code analyzer and penetration testing tool.
-\item Twitter analyzer: distributed system using Apache Storm for collecting and analyzing Twitter data, including a machine learning module written in Python for sentiment evaluation - http://twitter.com/trendsparrot.
-\item Distributed web application for parking lots visualization developed with Amazon Web Services (EC2, SQS, SNS, Route53, ELB, autoscaling, DynamoDB)
-\end{itemize}
-
-
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{Interests and Activities}
-\vspace{2mm}
-\begin{itemize}
-\item Technology, innovations, learning  new topics and improving my background.
-\item Traveling, getting to know different cultures, music, sports, documentaries, cooking, hiking.
-\end{itemize}
+%\section{Interests and Activities}
+%\vspace{2mm}
+%\begin{itemize}
+%\item Technology, innovations, learning  new topics and improving my background.
+%\item Traveling, getting to know different cultures, music, sports, documentaries, %cooking, hiking.
+%\end{itemize}
 
 %----------------------------------------------------------------------------------------
 
